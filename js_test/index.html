@@ -1,0 +1,31 @@
+<div></div>
+
+<script>
+    console.log("전역",this);
+
+    let obj = {
+        data1 : ['a'],
+        data2 : ['b'],
+        func1 : () => {
+            console.log("애로우펑션",this);
+            obj.data1.forEach(() => {
+                console.log("애로우펑션-애로우펑션",this);
+            })   
+        },
+        func2 : function () {
+            obj.data1.forEach(() => {
+                console.log("일반함수-애로우펑션1", this);
+            })
+        },
+        func3 : function() {
+            console.log(this);
+            obj.data2.forEach(() => {
+                console.log("일반함수-애로우펑션2", this);
+            })
+        }
+    }
+
+    obj.func1();
+    obj.func2();
+    obj.func3();
+</script>
