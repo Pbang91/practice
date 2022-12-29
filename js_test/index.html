@@ -35,4 +35,16 @@
             console.log(this.innerHTML);
         }, 1000);
     });
+
+    var person = {
+        say : function () {
+            console.log(this.name + "Hello")
+        }
+    }
+
+    var person2 = {
+        name : 'Kim'
+    }
+
+    person.say.apply(person2);
 </script>
