@@ -1,4 +1,5 @@
 <div></div>
+<button id="btn">버튼</button>
 
 <script>
     console.log("전역",this);
@@ -28,4 +29,10 @@
     obj.func1();
     obj.func2();
     obj.func3();
+
+    document.getElementById('btn').addEventListener('click', function() {
+        setTimeout(() => {
+            console.log(this.innerHTML);
+        }, 1000);
+    });
 </script>
