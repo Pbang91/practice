@@ -56,3 +56,69 @@ function 함수(x ? :number) : void {
 
 함수();
 함수(2);
+
+function checkNum(numbs : string | number) : number {
+	let convertString = numbs.toString();
+    return convertString.length
+}
+
+console.log(checkNum(123));
+console.log(checkNum("55102"));
+
+function canIGetMarried(월소득 : number, 집 : boolean, 매력점수 : string) : string | void {
+	let score : number = 0;
+	score += 월소득 / 10000
+	
+	if ( 집 == true ){
+		score += 500
+    }
+		
+	if ( 매력점수 == '상' ){
+		score += 100
+	}
+	
+	if ( score >= 600 ){
+		return '결혼가능'
+	}
+}
+
+console.log(canIGetMarried(300000, false, '중'));
+
+function cleaning(numbers : (number | string)[]) : number[] {
+    let data = []
+
+    numbers.forEach((e)=>{
+        if (typeof e === "number") {
+            data.push(e);
+        } else {
+            let newNum = parseInt(e);
+            data.push(newNum);
+        }
+    })
+
+    return data
+}
+
+console.log(cleaning([1,"10",100]));
+
+let Ted = { subject : 'math' };
+let Lai = { subject : ['science', 'english']};
+let Woo = { subject : ['science', 'art', 'korean']};
+
+function checkMainSubject(person : { subject : string | string[]}) : string {
+    if (Array.isArray(person.subject)) {
+        return person.subject.pop()
+    } else {
+        return person.subject
+    }
+}
+
+console.log(checkMainSubject(Ted));
+console.log(checkMainSubject(Lai));
+console.log(checkMainSubject(Woo));
+
+type CssType = {
+    color ? : string,
+    size : number,
+    readonly position : number[]
+}
