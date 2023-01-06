@@ -237,3 +237,23 @@ let hoo : Cal = {
         return x - y
     }
 }
+
+function max (...rest : number[]) : number {
+    let maxNum : number = 0;
+    
+    rest.forEach((e) =>{
+        if (e > maxNum) {
+            maxNum = e;
+        }
+    })
+
+    return maxNum
+}
+
+function func({user, comment, admin} : {user : string, comment : number[], admin : boolean}) : void{
+    console.log(user, comment, admin);
+}
+
+function func2([a,b,c] : (number | string | boolean)[]) : void {
+	console.log(a, b, c)
+}
