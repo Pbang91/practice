@@ -51,7 +51,9 @@ school.score[4] = false;
 school.friend = ["Lee", school.teacher]
 
 function 함수(x ? :number) : void {
-    x + 1;
+    if (typeof x === "number") {
+        x + 1;
+    }
 }
 
 함수();
@@ -85,7 +87,7 @@ function canIGetMarried(월소득 : number, 집 : boolean, 매력점수 : string
 console.log(canIGetMarried(300000, false, '중'));
 
 function cleaning(numbers : (number | string)[]) : number[] {
-    let data = []
+    let data : number[] = []
 
     numbers.forEach((e)=>{
         if (typeof e === "number") {
@@ -107,7 +109,9 @@ let Woo = { subject : ['science', 'art', 'korean']};
 
 function checkMainSubject(person : { subject : string | string[]}) : string {
     if (Array.isArray(person.subject)) {
-        return person.subject.pop()
+        // let word = person.subject.pop() 내로잉을 했는디 어레이로 안받아지네..
+        return person.subject[person.subject.length -1];
+        // return word
     } else {
         return person.subject
     }
@@ -121,4 +125,115 @@ type CssType = {
     color ? : string,
     size : number,
     readonly position : number[]
+}
+
+let title = document.querySelector('#title');
+if (title !== null) {
+    title.innerHTML = "반갑습니다";
+}
+
+let button = document.getElementById('btn');
+let imgNAme = document.getElementById('img');
+
+if (button instanceof HTMLButtonElement) {
+    button.addEventListener('click', function() {
+        if (imgNAme instanceof HTMLImageElement) {
+            imgNAme.src = "new.jpg"
+        }
+    })
+}
+
+let links = document.querySelectorAll('.link');
+
+for (let i = 0; i<links.length; i++){
+    let link = links[i]
+    
+    if (link instanceof HTMLAnchorElement) {
+        link.href = "https://kakao.com";
+        link.innerHTML = "사실은 카카오";
+    }
+}
+
+class Person {
+    name : string;
+    age : number;
+    
+    constructor(name : string, age : number) {
+        this.name = name;
+        this.age = age;
+    }
+
+    outText(text){
+        console.log(text);
+    }
+}
+
+let jade = new Person('json', 20);
+
+jade.outText("안뇽");
+
+class Car {
+	name : string;
+	price : number;
+	
+	constructor(name : string, price : number) {
+		this.name = name;
+		this.price = price
+	}
+	
+	tax () : number {
+        return this.price/0.1
+    }
+}
+
+class Word {
+	num : number[] = []
+	str : string[] = []
+	
+	constructor(...args){
+        
+		args.forEach((e) => {
+			if (typeof e === 'number') {
+				this.num.push(e);
+			} else {
+				this.str.push(e)
+			}
+		})
+	}
+}
+
+let word = new Word('kim', 3, 5, 'park');
+
+console.log(word.num);
+console.log(word.str);
+
+interface Product {
+    brand : string;
+    serialNumber : number;
+    model : string[]
+}
+
+interface Cart {
+    product : string;
+    price : number
+}
+
+let myCart : Cart[] = [{ product : '청소기', price : 70000 }, { product : '뭐지', price : 11 }]
+
+interface UpdatedCart extends Cart {
+    card : boolean
+}
+
+interface Cal {
+    plus : (x : number, y : number) => number;
+    minus : (x : number, y : number) => number;
+}
+
+let hoo : Cal = {
+    plus(x,y) {
+        return x + y
+    },
+    minus(x,y) {
+        return x - y
+    }
 }
