@@ -25,6 +25,7 @@
 
 .container {
     width: 800px;
+    font-size: 15px;
 }
 
 .header {
@@ -52,4 +53,41 @@
     height: 100px;
     background: grey;
     clear: both;
+}
+
+.iphone {
+    max-width: 100%;
+}
+
+.blog-info {
+    width : 70%;
+	float: left;
+    margin-bottom: 20px;
+}
+
+.thumb {
+    width : 30%;
+    float: left;
+    position: relative;
+}
+
+.plus {
+    width : 10%;
+    position: absolute;
+    right: 0;
+    bottom: 5%
+}
+
+.upload-time{
+    margin-bottom: 10px;
+    color : gray
+}
+
+.user-info {
+    max-width: 80%;
+    display: inline-block;
+}
+
+.profile-img{
+    max-width: 20%;
 }
