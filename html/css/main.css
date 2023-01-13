@@ -1,3 +1,11 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
 .profile {
     width: 500px;
     display: block;
@@ -26,6 +34,10 @@
 .container {
     width: 800px;
     font-size: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #eee;
 }
 
 .header {
@@ -59,35 +71,127 @@
     max-width: 100%;
 }
 
+.plus {
+    width : 10%;
+    position: absolute;
+    right: 2%;
+    bottom: 15%
+}
+
 .blog-info {
     width : 70%;
+    height: 200px;
 	float: left;
     margin-bottom: 20px;
 }
 
 .thumb {
     width : 30%;
+    height: 200px;
     float: left;
     position: relative;
 }
 
-.plus {
-    width : 10%;
-    position: absolute;
-    right: 0;
-    bottom: 5%
-}
-
 .upload-time{
-    margin-bottom: 10px;
     color : gray
 }
 
+.profile-img{
+    float: left;
+    max-width: 15%;
+    max-height: 50%;
+    border-radius: 60%;
+    margin: 10px 5px;
+}
+
 .user-info {
+    float: left;
     max-width: 80%;
+    margin: 5px 5px;
+}
+
+.nickname, .upload-time {
+    margin: 5px 0 10px 0;
+}
+
+.title {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.main-text {
+    color: gray;
+}
+
+.navbar > li {
     display: inline-block;
 }
 
-.profile-img{
-    max-width: 20%;
+.navbar > li> a {
+    font-size: 16px;
+    text-decoration: none;
+    color: inherit;
+    background: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.main-background {
+    width: 100%;
+    height: 1000px;
+    background-image: url("./../pexels-asad-photo-maldives-1450353.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* filter: ; */
+    padding: 1px;
+    position: relative;
+}
+
+.main-title {
+    margin-top: 30%;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-background > p{
+    text-align: center;
+    color: white;
+}
+
+.main-btn {
+    padding: 5px;
+    font-size: 18px;
+    background: white;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.main-btn:active {
+    background-color: blanchedalmond
+}
+
+.main-sub {
+    padding: 20px;
+    text-align: center;
+    background: #eee;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    bottom: -13%;
+}
+
+input[type=text] {
+    padding : 10px;
+    font-size: 20px;
+    border: 2px solid red;
+    border-radius: 10px;
 }
