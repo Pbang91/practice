@@ -10,16 +10,38 @@
         <h4 class="main-title">Go to Island</h4>
         <p>조용한 휴양지에서 개발하면서 흘러가듯이 살자. 돈 많이 벌고 : )</p>
         <button class="main-btn">떠나기</button>
-        <div class="main-sub">
+        <!-- <div class="main-sub">
             <h4>언제?</h4>
             <p>언제 떠나는지는 내가 하기 나름이징. 그냥 떠나거나, 돈 벌고 떠나거나, 가서 돈 벌면서 살거나. 돈 벌면서 쉬고 싶당</p>
-        </div>
+        </div> -->
     </div>
 
-    <form>
-        <input type="text">
-        <input type="text">
-        <button type="submit">전송</button>
-    </form>
+    <div class="contact-outer">
+        <div class="contact-inner">
+            <form>
+                <div class="w-100">
+                    <h3 class="contact-title">Contact Me</h3>
+                    <p class="contact-info">Your Email</p>
+                    <input type="email" placeholder="email@example.com" class="form-input">
+                </div>
+                <div class="contact-name">
+                    <p class="contact-info">First name</p>
+                    <input type="text" class="form-input">
+                </div>
+                <div class="contact-name">
+                    <p class="contact-info">Last name</p>
+                    <input type="text" class="form-input">
+                </div>
+                <div class="w-100">
+                    <p class="contact-info">Meessage</p>
+                    <textarea rows="5" class="form-input"></textarea>
+                </div>
+                <div class="w-100">
+                    <input id="sub" type="checkbox"><label for="sub">Subscribe</label>
+                    <button type="submit">SEND</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
