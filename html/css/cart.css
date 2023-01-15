@@ -1,0 +1,40 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.cart-background {
+    width: 100%;
+    background-color: #c2d3de;
+    padding: 30px;
+}
+
+.cart-table {
+    width: 100%;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.cart-table td, th {
+    padding: 15px;
+    vertical-align: middle;
+    border-bottom: 1px solid #c2d3de
+}
+
+.cart-table th:nth-child(2){
+    width: 500px;
+    /* max-width와 비슷함 */
+}
+
+th {
+    text-align: center;
+}
+
+td {
+   text-align: right;
+}
+
+td > p {
+    text-align: left;
+}
