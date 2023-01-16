@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+.flex-container {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+}
+
+.flex-item {
+    /* float: left; */
+    margin: 10px 10px;
+}
+
+@media screen and (max-width: 992px) {
+    /* .flex-item {
+        float: left; */
+        /* width: 50%;
+    } */
+
+    .flex-container {
+        flex-wrap: wrap;
+    }
+    .flex-item {
+        width: 40%;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    /* .flex-item {
+        float: none;
+        width: 100%;
+    } */
+    
+    .flex-container {
+        flex-direction: column;
+    }
+}
