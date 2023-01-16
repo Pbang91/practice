@@ -252,3 +252,14 @@ button {
     border: none;
     background: orange;
 }
+
+.nav-container {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    padding: 5px;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
