@@ -1,0 +1,113 @@
+body {
+    margin: 0px;
+}
+
+div,button {
+    box-sizing: border-box;
+}
+
+.main-bn {
+    height: 600px;
+    background-image: linear-gradient(to bottom, rgb(58, 124, 206), rgb(64, 92, 188));
+    position: relative;
+}
+
+.main-empty-bn {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    position: absolute;
+}
+
+.main-bn-left {
+    position: absolute;
+    top: 10%;
+    padding-left: 10%;
+    width: 50%;
+    height: 50%;
+    color: white;
+}
+
+button {
+    background: rgb(60,60,60);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+label {
+    color: white;
+}
+
+.main-bn-right {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: 10%;
+    bottom: 0;
+}
+
+.main-bn-right img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-text {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.main-text p:nth-child(2) {
+    font-size: 12px;
+}
+
+.main-offer {
+    background: rgb(65, 84, 184);
+    text-align: center;
+    height: 300px;
+}
+
+.main-offer p {
+    color: white;
+}
+
+.i-bg {
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px 30px;
+}
+
+.i-bg p {
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+i {
+    margin-top: 25%;
+    font-size: 50px;
+}
+
+.main-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main-img img {
+    /* 사진 밑에 언더라인 제거 */
+    width: 100%;
+    display: block;
+}
+
+@media screen and (max-width:768px){
+    .main-empty-bn {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
