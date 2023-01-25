@@ -1,0 +1,38 @@
+ul li {
+  list-style: none;
+  padding: 15px;
+  border: 1px solid #eee;
+}
+ul .active {
+  background-color: skyblue;
+}
+
+.alert-box-orange, .alert-box-yello, .alert-box-green {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #eee;
+  color: white;
+}
+
+.alert-box-green {
+  background: green;
+}
+
+.alert-box-yello {
+  background: yellow;
+}
+
+.alert-box-orange {
+  background: orange;
+}
+
+.row .col-6 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.row .col-4 {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}/*# sourceMappingURL=sass.css.map */
