@@ -321,3 +321,41 @@ button {
     margin-top: 50%;
     opacity: 1;
 }
+
+.pseudo::first-letter {
+    color: red;
+    font-size: 30px;
+}
+
+.pseudo::first-line {
+    font-weight: 900;
+}
+
+.input-file::file-selector-button {
+    background: skyblue;
+    border: none;
+    padding: 20px;
+}
+
+progress {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: white;
+    color: red;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+}
+
+progress::-webkit-progress-value{
+    background-color: red;
+    border-radius: 2px;
+}
+
+progress::-moz-progress-bar {
+    background-color: red;
+    border-radius: 2px;
+}

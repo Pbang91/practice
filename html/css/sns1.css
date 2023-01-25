@@ -1,0 +1,16 @@
+.white-box {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 2px 1px #eee;
+    /* x축 이동량, y축 이동량, blur, spread, 색상 */
+}
+
+.pill {
+	display: inline-block;
+	border: 1px solid lightgray;
+	border-radius: 100px;
+	padding: 3px 12px 5px 12px;
+	margin-right: 2px;
+	margin-bottom: 5px;
+}
