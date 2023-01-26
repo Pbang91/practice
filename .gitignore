@@ -82,6 +82,6 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,windows
 *.pyc
 __pycache__
-*.json
-others
+secret.json
 node_modules
+others
