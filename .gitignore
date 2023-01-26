@@ -84,3 +84,4 @@ $RECYCLE.BIN/
 __pycache__
 *.json
 others
+node_modules
